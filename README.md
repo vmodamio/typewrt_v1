@@ -102,7 +102,21 @@ Then, the interrupt mechanism was modified to be able to still register keys whi
 the keyboard would still scan the whole matrix for more events, during a small period of few seconds, going to sleep after timeout.
 New registered events reseting the timer to zero.
 
+### Board (SBC) and OS
+The Raspberry Pi zero W was a evry nice board to start with. The documentation is superb and the amount of examples and external
+support also. But they are not the most efficient and curated boards regarding power consumption. The Board consumed around 120 mA
+or 0.6W of power. I changed it for a similar format board from Radxa. A Rock-S0 board, with a quad core Arm-cortex A35, 512 MB of DDR3 
+ram, and 8 GB of EMMC memory. The cortex A35 is a step forward in efficiency and low power, and the board is very nice in the sense
+it does not include peripherals that I dont need. 
+The challenge was to install the display linux kernel driver and the keyboard driver I already had for the raspberry. Because the 
+documentation from Radxa is very scarce. I managed to install an Armbian linux on the board (Armbian is the linux distribution that 
+support more embedded systems from Arm), and with lot of private feedback from Radxa I managed to make my drivers work in the new board.
 
- 
-  
+Later I optimized it to reduce power at maximum. I reduced the cpu clock frequency, dissable two of the cores, reduce the ram frequency
+as well, and dissable HDMI, USB and Ethernet peripherals. 
 
+### Battery, UPS board and connectors
+
+
+### Enclosure
+Design, ergonomics, 3D print, gluing, annealing... inserts,
