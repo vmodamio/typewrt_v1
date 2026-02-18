@@ -25,6 +25,8 @@ the fact that whole words appeared at once. But making a typo and start hitting 
 The power consumption was huge. Not as bad as an LCD, but definitely not something for a battery driven device.
 At the maximum refreshing rate, and taking into account the size and resolution, the display was very power 
 hungry. Not to say the 'artifacts' and the noise it quickly appeared in the screen with that refreshing rates.
+And that beautiful FreeWrite that cost over 500 euros? How does a dedicated writing device justify the price
+then! 
 
 After many days of researching, I discovered a reflective (no backlight), ultra-low power display from SHARP 
 called memory-in-pixel. The largest model was only 4.4 inches. They were monochromatic, and the resolution, 
@@ -41,5 +43,22 @@ The size was a concern. But a VGA font (8x16) would give 15 lines of text with 4
 also a compromise. Instead of that beautifully sharp typefaces from the HD eink display, I'm coming back to the 
 terminal font appearance (more on that later). 
 
+The last issue with the diplay was that no one provided a breakboard to use the 4.4 inches model. Adafruit had a 
+breakboard for the smaller ones though, but going smaller than 4.4 inches was too far from a perfect typewriter. 
+I just needed to learn how to make a PCB.
 
+### Keyboard
+If you like photography and compare, for example, the quality of the imagery produced with a Leica and a top notch
+Sony camera, I promise you wont see any difference. Maybe the photographer with the Leica is more profesional, or 
+his/her style of photography pairs better with a compact rangefinder. Or maybe there is in fact, that 'distraction-free' 
+argument playing a role too, or maybe not to any of that. But if you have ever taken a Leica M in your hands and focus 
+through the rangefinder, spining the objetive to get the focus, and press the shutter...you can feel the precission
+ and quality of the 'instrument'. That in my opinion is unsurpassable. 
+
+I wanted something like that for my typewriter. Not that pretentious, but having that feeling when typing, of something
+that is precise and comfortable. Exquisite to type in. So the typewriter should have a mechanical keyboard loaded with
+tactile switches. And at the same time completely silent. That is my preference, simply because I dont want to 
+have a minuscule remorse when typing in a public space. Or even worse, when being alone with my mind blank and hearing 
+the clicks of those keys muted. 
+  
 
