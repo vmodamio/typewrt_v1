@@ -53,7 +53,7 @@ If you like photography and compare, for example, the quality of the imagery pro
 Sony camera, I promise you wont see any difference. Maybe the photographer with the Leica is more profesional, or 
 his/her style of photography pairs better with a compact rangefinder. Or maybe there is in fact, that 'distraction-free' 
 argument playing a role too, or maybe not to any of that. But if you have ever taken a Leica M in your hands and focus 
-through the rangefinder, spining the objetive to get the focus, and press the shutter...you can feel the precission
+through the rangefinder, turning the objetive to get the focus, and press the shutter...you can feel the precission
  and quality of the 'instrument'. That in my opinion is unsurpassable. I dont know however, if I would take more photos
 if my camera were a Leica. Maybe the joy of using it would be perennial, maybe those more photos wouldnt be any better.
 
@@ -63,7 +63,11 @@ tactile switches. Like the double-scape of the piano keys. Something you depress
 the execution of the full stroke registering the event. At the same time I
 wanted it completely silent. That is my preference, simply because I dont want
 to have a minuscule remorse when typing in a public space (afecting my writing). Or even worse, when
-being alone with my mind blank and hearing the clicks of those keys muted. 
+being alone with my mind blank, and hearing the clicks of those keys muted. 
+
+For the keycaps I went for a PBT, grainy, thick and matt white pieces. They came in a Cherry profile. Cherry profile 
+is one of the oldest profiles. Also, it has the lowest heigh. This helps to minimize the total keyboard height as it 
+is something I care for the ergonomics (more on that later).
 
 I bought a keyboard PCB, that included a ATmega microcontroller and connected via USB. Using it with a raspberry is 
 plug and play. I bought as well a beautiful bronze plate that I would have mounted in the final enclosure, together 
@@ -100,7 +104,10 @@ combinations were not registered, or the combination was missinterpretted by the
 Ended implementing a [debounce/denoise algorithm that found very elegant](https://sev.dev/hardware/better-debounce-algorithms/). 
 Then, the interrupt mechanism was modified to be able to still register keys while pressing others. Once a key triggers the event,
 the keyboard would still scan the whole matrix for more events, during a small period of few seconds, going to sleep after timeout.
-New registered events reseting the timer to zero.
+New registered events reseting the timer to zero. 
+For the microcontroller board, I avoided powering it from the 5V line to skip the voltage regulator (power from the 3.3V instead), 
+and I desoldered all the leds as well. At the end, the keyboard is using barely 3 uA current when idle, and 3 mA during the 
+active typing. That is above a factor 100 compared to the USB alternatives, and more than a factor 10 compared to wireless.
 
 ### Board (SBC) and OS
 The Raspberry Pi zero W was a evry nice board to start with. The documentation is superb and the amount of examples and external
@@ -116,7 +123,16 @@ Later I optimized it to reduce power at maximum. I reduced the cpu clock frequen
 as well, and dissable HDMI, USB and Ethernet peripherals. 
 
 ### Battery, UPS board and connectors
+From the very begining, I foresaw for the project something with a huge battery, and a minimal power consumption. I had ample 
+space below the display, becasuse I also wanted the display with enough tilt, and a minimum of 3 cm away from the keyboard. For the 
+weight, that is exactly were this project departs from other ideas. As I would rather add the heaviest, largest and powerful battery 
+I could fit no matter the grams it take. The device should be portable (compact), but never at the expenses of poor ergonomics or 
+small keyboards. 
+
+The space in the enclosure was fiting a flat LiPo battery of 12000 mAh. Unfortunately, that battery died once I charged the machine 
+with a laptop charger (more later on the USB connector), and couldn't find a good replacement for it. So the machine is feed now 
+with a 8000 mAh.
 
 
 ### Enclosure
-Design, ergonomics, 3D print, gluing, annealing... inserts,
+Design, ergonomics, 3D print, gluing, annealing... inserts, rubber pads, screws visibility.
