@@ -10,7 +10,7 @@ could fit in a small case and take to a coffee shop. First and foremost, somethi
 a laptop any time. This, among the following criteria, implying a much better battery life. Much, much
 better to the point of forgetting you are typing in an electrical device.
 ![Presentation](images/PXL_20260210_211146593.jpg) 
-![Side view](PXL_20260210_211225987.jpg)
+![Side view](images/PXL_20260210_211225987.jpg)
 
 ## Criteria
 
