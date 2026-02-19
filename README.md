@@ -135,6 +135,33 @@ The space in the enclosure was fiting a flat LiPo battery of 12000 mAh. Unfortun
 with a laptop charger (more later on the USB connector), and couldn't find a good replacement for it. So the machine is feed now 
 with a 8000 mAh.
 
+Inside the enclosure there is, side by side, the Radxa SBC and a battery controller, model raspberry Pijuice. The USB-C connector
+is powering the UPS (Pijuice board). This little board is programable. The little power button in the display lid is programed to 
+deliver power to the SBC rails when clicked, but also to software power-down the computer when holding it for more than 3 seconds.
+
+Other than that, this Pijuice consumes almost nothing when in deep-sleep, and the battery holds for 3-4 months when you leave the 
+machine powered off on the shelf.
+
 
 ### Enclosure
 Design, ergonomics, 3D print, gluing, annealing... inserts, rubber pads, screws visibility.
+This was probably one of the funniest and most rewarding parts of the project. It took me few iterations to get my final design. 
+Starting from the keyboard plate, placed with an angle of 6 degree. Everything revolved around it. The design is made to hide
+the screws (inserted from the bottom). I wanted a clean design, functional and very minimalist. 
+The enclosure have a lower body and a display lid, tilted 30 degree. If you were typing seated at the right height, with your hands
+parallel to the keyboard and the wrists slightly elevated (and if you are between 1.70 and 1.80 height hahah), I think that would 
+be the minimum angle you would like to have ergonomically wise.
+
+The enclosure is 3D printed with PLA and 100% infill. And it is printed in two parts (didnt fit in my printer). Later, those parts
+are plastic welded with an organic solvent. That, after many tries with many different glues and solvents resulted in the best joint.
+
+The glued parts were later annealed in the oven at 90 Celsius for about an hour. This fuses the layers and produces a harder piece. 
+But the main reason I wanted this done was because the final part would whistand more temperature than a normal PLA.
+In order to bake the parts in the oven, I used a big tray, where I covered the parts with very fine salt. I used about 8 liter of 
+common salt, that I processed in an old blender to make it finer. Took me many attempts, after I nailed the way of dusting with the salt 
+and compacting the whole thing, but finally, the parts came with absolutely no deformation or shrink from the oven.
+The parts were later sanded and painted. 
+
+I tried to print it in ASA, and PC, but they always came with a minimum warp no matter the care I put. PLA is so forgiving and precise
+that everything fits nicely. I even reduced the tolerances from 0.15 mm I had to 0.07 mm.
+
